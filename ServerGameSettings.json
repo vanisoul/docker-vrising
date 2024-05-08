@@ -1,0 +1,59 @@
+﻿{
+  "GameModeType": "PvE",
+  "DeathContainerPermission": "ClanMembers",
+  "RelicSpawnType": "Plentiful",
+  "CastleHeartDamageMode": "CanBeDestroyedOnlyWhenDecaying",
+  "CastleDamageMode": "Never",
+  "BloodBoundEquipment": true,
+  "CanLootEnemyContainers": false,
+  "Death_DurabilityFactorLoss": 0.0,
+  "Death_DurabilityLossFactorAsResources": 0.0,
+  "AnnounceSiegeWeaponSpawn":  false,
+  "ClanSize": 10,
+  "TeleportBoundItems": false,
+  "AllowGlobalChat": true,
+  "DismantleResourceModifier": 1.0,
+  "CastleStatModifiers_Global": {
+    "TickPeriod": 5.0,
+    "SafetyBoxLimit": 1,
+    "EyeStructuresLimit": 1,
+    "TombLimit": 12,
+    "VerminNestLimit": 4,
+    "PrisonCellLimit": 16,
+    "HeartLimits": {
+      "Level1": {
+        "FloorLimit": 75,
+        "ServantLimit": 8,
+        "BuildLimits": 2,
+        "HeightLimit": 6
+      },
+      "Level2": {
+        "FloorLimit": 210,
+        "ServantLimit": 10,
+        "BuildLimits": 2,
+        "HeightLimit": 6
+      },
+      "Level3": {
+        "FloorLimit": 350,
+        "ServantLimit": 13,
+        "BuildLimits": 2,
+        "HeightLimit": 6
+      },
+      "Level4": {
+        "FloorLimit": 525,
+        "ServantLimit": 16,
+        "BuildLimits": 2,
+        "HeightLimit": 6
+      },
+      "Level5": {
+        "FloorLimit": 800,
+        "ServantLimit": 20,
+        "BuildLimits": 2,
+        "HeightLimit": 6
+      }
+    },
+    "CastleLimit": 3,
+    "NetherGateLimit": 1,
+    "ThroneOfDarknessLimit": 1
+  }
+}

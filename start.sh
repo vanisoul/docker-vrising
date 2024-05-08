@@ -1,13 +1,17 @@
 #!/bin/bash
 s=/mnt/vrising/server
 p=/mnt/vrising/persistentdata
+
+cp /mnt/settings/ServerGameSettings.json $p/Settings/
+cp /mnt/settings/ServerHostSettings.json $p/Settings/
+
 echo "Setting timezone to $TZ"
 echo $TZ > /etc/timezone 2>&1
 ln -snf /usr/share/zoneinfo/$TZ /etc/localtime 2>&1
 dpkg-reconfigure -f noninteractive tzdata 2>&1
 if [ ! -z $UID ]; then
 	usermod -u $UID docker 2>&1
-fi 
+fi
 if [ ! -z $GID ]; then
 	groupmod -g $GID docker 2>&1
 fi

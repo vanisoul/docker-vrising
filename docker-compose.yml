@@ -1,16 +1,20 @@
-version: '3.3'
 services:
   vrising:
-    # build: . # Build from Dockerfile
+    build: . # Build from Dockerfile
     container_name: vrising
-    image: trueosiris/vrising
+    # image: trueosiris/vrising
     network_mode: bridge
+    restart: always
+    stop_grace_period: 600s
+    init: true
     environment:
-      - TZ=Europe/Paris
-      - SERVERNAME=vrisingDocker
+      - TZ=Asia/Taipei
+      - SERVERNAME=tomorrowServer
     volumes:
       - './server:/mnt/vrising/server:rw'
       - './data:/mnt/vrising/persistentdata:rw'
+      - './ServerHostSettings.json:/mnt/settings/ServerHostSettings.json'
+      - './ServerGameSettings.json:/mnt/settings/ServerGameSettings.json'
     ports:
       - '9876:9876/udp'
       - '9877:9877/udp'

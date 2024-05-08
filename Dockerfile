@@ -1,4 +1,4 @@
-FROM ubuntu:22.04 
+FROM ubuntu:22.04
 LABEL maintainer="Tim Chaubet"
 VOLUME ["/mnt/vrising/server", "/mnt/vrising/persistentdata"]
 
@@ -11,7 +11,7 @@ RUN apt update -y && \
     add-apt-repository multiverse && \
     dpkg --add-architecture i386 && \
     apt update -y && \
-    apt-get upgrade -y 
+    apt-get upgrade -y
 RUN useradd -m steam && cd /home/steam && \
     echo steam steam/question select "I AGREE" | debconf-set-selections && \
     echo steam steam/license note '' | debconf-set-selections && \
