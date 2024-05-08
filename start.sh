@@ -2,6 +2,8 @@
 s=/mnt/vrising/server
 p=/mnt/vrising/persistentdata
 
+mkdir -p $p/Settings/
+
 cp /mnt/settings/ServerGameSettings.json $p/Settings/
 cp /mnt/settings/ServerHostSettings.json $p/Settings/
 
