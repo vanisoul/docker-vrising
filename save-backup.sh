@@ -4,6 +4,9 @@
 SRC_FOLDER="/home/comvanillasoulrendezvous/docker-vrising/data/Saves/v3/world1"
 DEST_FOLDER="/mnt/backup"
 
+sudo cp ${SRC_FOLDER}/SessionId.json $DEST_FOLDER
+sudo cp ${SRC_FOLDER}/StartDate.json $DEST_FOLDER
+
 # 在原始資料夾中找到編號最大的 AutoSave 檔案
 MAX_FILE=$(ls $SRC_FOLDER/AutoSave_*.save.gz | sort -V | tail -n 1)
 
