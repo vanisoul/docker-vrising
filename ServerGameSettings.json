@@ -8,7 +8,7 @@
   "CanLootEnemyContainers": false,
   "Death_DurabilityFactorLoss": 0.0,
   "Death_DurabilityLossFactorAsResources": 0.0,
-  "AnnounceSiegeWeaponSpawn":  false,
+  "AnnounceSiegeWeaponSpawn": false,
   "ClanSize": 10,
   "TeleportBoundItems": false,
   "AllowGlobalChat": true,
@@ -52,7 +52,7 @@
         "HeightLimit": 6
       }
     },
-    "CastleLimit": 3,
+    "CastleLimit": 15,
     "NetherGateLimit": 1,
     "ThroneOfDarknessLimit": 1
   }
